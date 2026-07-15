@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       locale: const Locale('fa', 'IR'),
       supportedLocales: const [
         Locale('fa', 'IR'),
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const Scaffold(
         body: Center(
-          child: Text('Hello, World!'),
+          child: Text('سـلام دونیـــا'),
         ),
       )
     );

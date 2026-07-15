@@ -1,4 +1,4 @@
-package com.example.jibme
+package com.ardijoon.jibme
 
 import io.flutter.embedding.android.FlutterActivity
 
