@@ -4,7 +4,7 @@ class AppColors {
 
   static final Color iceWhite = const Color(0xffffffff);
   static final Color scaffoldBackground = const Color(0xff0F172A);
-  static final Color emeraldGreen = const Color(0xff16A34A);
+  static final Color emeraldGreen = const Color.fromARGB(255, 74, 255, 140);
 
   static final Color indigo = const Color(0xff4F46E5);
   static final Color blue = const Color(0xff2563EB);
