@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:jibme/app/theme/main_theme.dart';
+import 'package:jibme/presentation/views/main/home_screen.dart';
+import 'package:jibme/presentation/views/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,14 +29,8 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       title: 'JibMe',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const Scaffold(
-        body: Center(
-          child: Text('سـلام دونیـــا'),
-        ),
-      )
+      theme: AppTheme.mainTheme,
+      home: const HomeScreen(), //const SplashScreen(),
     );
   }
 }
