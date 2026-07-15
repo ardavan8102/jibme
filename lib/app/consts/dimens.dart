@@ -15,5 +15,6 @@ class AppDimens {
   static final double inputRadius = 14.0;
   static final double modalRadius = 24.0;
   static final double bottomSheetRadius = 32.0;
+  static final double circularIconButton = 100.0;
 
 }

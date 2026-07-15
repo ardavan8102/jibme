@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jibme/app/consts/colors.dart';
+import 'package:jibme/app/consts/dimens.dart';
+import 'package:jibme/presentation/widgets/main/home_appbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -10,6 +13,39 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    final size = MediaQuery.of(context).size;
+    final textTheme = Theme.of(context).textTheme;
+
+    return Scaffold(
+      body: Container(
+        height: size.height,
+        width: size.width,
+        padding: EdgeInsets.fromLTRB(
+          AppDimens.screenContentPadding,
+          AppDimens.screenContentPadding * 2,
+          AppDimens.screenContentPadding,
+          AppDimens.screenContentPadding,
+        ),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.scaffoldBackground,
+              AppColors.blue,
+            ],
+            begin: .bottomCenter,
+            end: .topCenter,
+            stops: [0.0, 1],
+          )
+        ),
+        child: Column(
+          children: [
+      
+            // Appbar
+            HomeAppBar(),
+      
+          ],
+        ),
+      ),
+    );
   }
 }
