@@ -3,7 +3,9 @@ import 'package:jibme/app/consts/colors.dart';
 import 'package:jibme/app/consts/dimens.dart';
 import 'package:jibme/presentation/widgets/button/color_text_button.dart';
 import 'package:jibme/presentation/widgets/button/glass_text_button.dart';
+import 'package:jibme/presentation/widgets/cards/banner_tile_card.dart';
 import 'package:jibme/presentation/widgets/cards/home_glass_card.dart';
+import 'package:jibme/presentation/widgets/cards/stats_card.dart';
 import 'package:jibme/presentation/widgets/main/home_appbar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -76,6 +78,100 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ],
+            ),
+
+            SizedBox(height: AppDimens.largeSpacing),
+
+            // create Wallet banner
+            InfoBannerCard(
+              title: 'مدیـریت کـیف پـول‌هـا',
+              subtitle: '6 کیـف پـول فعـال',
+              icon: Icons.wallet_outlined,
+              onTap: () {
+                // Navigate...
+              },
+            ),
+
+            SizedBox(height: AppDimens.largeSpacing),
+
+            // Stat Cards
+            Expanded(
+              child: GridView(
+                padding: EdgeInsets.zero,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: AppDimens.mediumSpacing,
+                  crossAxisSpacing: AppDimens.mediumSpacing,
+                  childAspectRatio: .85,
+                ),
+                children: [
+                  DashboardStatCard(
+                    backgroundColor: const Color(0xff0F172A).withValues(alpha: 0.5),
+                    icon: Icons.shopping_cart_outlined,
+                    title: 'خریـد روزمـره',
+                    subtitle: 'خوراکی و نوشیدنی',
+                    value: '1.300.000',
+                    badgeText: '5.9%',
+                    badgePositive: false,
+                    onTap: () {},
+                  ),
+
+                  DashboardStatCard(
+                    backgroundColor: const Color(0xff0F172A).withValues(alpha: 0.5),
+                    icon: Icons.local_taxi_outlined,
+                    title: 'حمـل و نقـل',
+                    subtitle: 'رفت و آمد',
+                    value: '11.500.000',
+                    badgeText: '25.2%',
+                    badgePositive: true,
+                    onTap: () {},
+                  ),
+
+                  DashboardStatCard(
+                    backgroundColor: const Color(0xff0F172A).withValues(alpha: 0.5),
+                    icon: Icons.account_balance_wallet_outlined,
+                    title: 'خریـد روزمـره',
+                    subtitle: 'خوراکی و نوشیدنی',
+                    value: '1.300.000',
+                    badgeText: '5.9%',
+                    badgePositive: true,
+                    onTap: () {},
+                  ),
+
+                  DashboardStatCard(
+                    backgroundColor: const Color(0xff0F172A).withValues(alpha: 0.5),
+                    icon: Icons.account_balance_wallet_outlined,
+                    title: 'خریـد روزمـره',
+                    subtitle: 'خوراکی و نوشیدنی',
+                    value: '1.300.000',
+                    badgeText: '5.9%',
+                    badgePositive: true,
+                    onTap: () {},
+                  ),
+
+                  DashboardStatCard(
+                    backgroundColor: const Color(0xff0F172A).withValues(alpha: 0.5),
+                    icon: Icons.account_balance_wallet_outlined,
+                    title: 'خریـد روزمـره',
+                    subtitle: 'خوراکی و نوشیدنی',
+                    value: '1.300.000',
+                    badgeText: '5.9%',
+                    badgePositive: true,
+                    onTap: () {},
+                  ),
+
+                  DashboardStatCard(
+                    backgroundColor: const Color(0xff0F172A).withValues(alpha: 0.5),
+                    icon: Icons.account_balance_wallet_outlined,
+                    title: 'خریـد روزمـره',
+                    subtitle: 'خوراکی و نوشیدنی',
+                    value: '1.300.000',
+                    badgeText: '5.9%',
+                    badgePositive: true,
+                    onTap: () {},
+                  ),
+                ],
+              ),
             ),
           ],
         ),

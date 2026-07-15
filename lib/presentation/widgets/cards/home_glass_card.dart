@@ -13,11 +13,11 @@ class HomeScreenGlassCard extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: .1),
+        color: Colors.white.withValues(alpha: .05),
         borderRadius: BorderRadius.circular(AppDimens.cardRadius),
         border: Border.all(
           width: 1,
-          color: Colors.white.withValues(alpha: .2),
+          color: Colors.white.withValues(alpha: .1),
         ),
       ),
       width: double.infinity,

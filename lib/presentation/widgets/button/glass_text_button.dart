@@ -15,7 +15,7 @@ class GlassTextButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.white.withValues(alpha: .1),
+        backgroundColor: Colors.white.withValues(alpha: .05),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusGeometry.circular(AppDimens.buttonRadius)
         ),
