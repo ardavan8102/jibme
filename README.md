@@ -1,16 +1,35 @@
-# jibme
+# JibMe
 
-A new Flutter project.
+A finance management application built with Flutter.
+
+> 🚧 **Status:** In development — features and structure are still evolving.
+
+## About
+
+JibMe aims to help users track and manage their personal finances in a simple, intuitive way.
+
+## Tech Stack
+
+- **Framework:** Flutter
+- **Language:** Dart
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+git clone https://github.com/ardavan8102/JibMe.git
+cd JibMe
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- A connected device or emulator
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Roadmap
+
+- [ ] Core finance tracking features
+- [ ] UI/UX polish
+- [ ] Data persistence
+- [ ] Testing
