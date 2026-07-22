@@ -3,8 +3,8 @@ import 'package:iconsax/iconsax.dart';
 import 'package:jibme/app/consts/dimens.dart';
 import 'package:jibme/presentation/widgets/button/icon_button.dart';
 
-class HomeAppBar extends StatelessWidget {
-  const HomeAppBar({
+class MainAppBar extends StatelessWidget {
+  const MainAppBar({
     super.key,
   });
 
@@ -15,7 +15,7 @@ class HomeAppBar extends StatelessWidget {
       spacing: AppDimens.mediumSpacing,
       children: [
         Text(
-          'جیــبــ مــی',
+          'JibMe',
           style: textTheme.titleLarge,
         ),
           

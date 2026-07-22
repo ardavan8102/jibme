@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:jibme/app/theme/main_theme.dart';
 import 'package:jibme/presentation/views/main/home_screen.dart';
-import 'package:jibme/presentation/views/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,9 +18,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      locale: const Locale('fa', 'IR'),
+      locale: const Locale('en', 'US'),
       supportedLocales: const [
-        Locale('fa', 'IR'),
+        Locale('en', 'US'),
       ],
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,

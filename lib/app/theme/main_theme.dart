@@ -5,8 +5,8 @@ class AppTheme {
 
   static final ThemeData mainTheme = ThemeData(
     brightness: .dark,
-    fontFamily: 'Dana',
-    scaffoldBackgroundColor: AppColors.scaffoldBackground,
+    fontFamily: 'Inter',
+    scaffoldBackgroundColor: AppColors.darkNavyScaffoldBackground,
     textTheme: const TextTheme(
       // Headlines
       headlineLarge: TextStyle(

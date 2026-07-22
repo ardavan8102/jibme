@@ -32,13 +32,13 @@ flutter:
     - assets/img/logo.png
 
   fonts:
-    - family: Dana
+    - family: Inter
       fonts:
-        - asset: assets/font/dana/DanaFaNum-Bold.ttf
-          weight: 700
-        - asset: assets/font/dana/DanaFaNum-DemiBold.ttf
+        - asset: assets/font/Inter_18pt-Bold.ttf
           weight: 600
-        - asset: assets/font/dana/DanaFaNum-Regular.ttf
+        - asset: assets/font/Inter_18pt-Medium.ttf
+          weight: 500
+        - asset: assets/font/Inter_18pt-Regular.ttf
           weight: 400
-        - asset: assets/font/dana/DanaFaNum-Light.ttf
+        - asset: assets/font/Inter_18pt-Light.ttf
           weight: 300
